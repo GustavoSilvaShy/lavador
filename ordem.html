@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de Serviço - Lavagem</title>
+    <link rel="stylesheet" href="ordem.css">
+</head>
+<body>
+        <div class="container">
+            <h1>Ordem de Serviço - Lavagem</h1>
+
+            <form id="ordemForm">
+
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" required>
+                </div>
+
+           
+
+            <div class="form-group">
+                <label for="carro">Carro:</label>
+                <select id="carro" required></select> 
+            </div>
+
+            <div class="form-group">
+                <label for="lavador">Lavador:</label>
+                <select id="lavador" required></select>
+            </div>
+
+            <div class="form-group">
+                <h3>Tabela de Preços</h3>
+                <table id="tabelaPrecos">
+
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Preço</th>
+                    </tr>
+
+                    <tr>
+                        <td>Pequeno</td>
+                        <td id="precoPequeno"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Medio</td>
+                        <td id="precoMedio"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Grande</td>
+                        <td id="precoGrande"></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <button type="submit">Salvar</button>
+        </form>
+
+        </div>
+        <script type="module" src="ordem.js"></script>
+</body>
+</html>
